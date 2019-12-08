@@ -48,6 +48,19 @@
       background-size: cover;
       -o-background-size: cover;
     }
+
+    .modal {
+      background-color: rgba(16,15,47,0.7);
+    }
+
+    .modal-title {
+      font-family: Raleway;
+      text-decoration: none;
+    }
+
+    a {
+      vertical-align:middle;
+    }
   </style>
 </head>
 
@@ -55,12 +68,12 @@
 
 <body>
   <h1 class="text-center text-white d-none d-lg-block site-heading" style="background-color: rgba(16,15,47,0.9);padding: 170px;padding-top: 170px;margin-bottom: 0px;margin-top: 0px;">
-    <img class="fa-spin spin-reverse" data-bs-hover-animate="pulse" style="width:150px; height: 150px;" src="../assets/img/memoji_black.png" alt="me">
+    <img class="fa-spin spin-reverse" data-bs-hover-animate="pulse" style="width:150px; height: 150px;" src="https://upload.wikimedia.org/wikipedia/commons/d/db/Circle-icons-brush-pencil.svg" alt="me">
     <br><br>
-    <span class="site-heading-lower">{Project Title}</span>
+    <span class="site-heading-lower">Art & Photos</span>
   </h1>
   <nav class="navbar navbar-light navbar-expand-lg bg-dark py-lg-4" id="mainNav">
-    <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="index.html">{Project Title}</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive"
+    <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="index.html">Art & Photos</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive"
         aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="nav navbar-nav mx-auto">
@@ -75,33 +88,97 @@
     <!-- Page Content -->
     <div class="container">
 
-      <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Thumbnail Gallery</h1>
+      <h1 class="font-weight-light text-center text-lg text-white-50 mt-4 mb-0" style="background-color: rgba(86,126,230,.9); padding: 5px;">Thumbnail Gallery</h1>
 
       <hr class="mt-2 mb-5">
 
       <div class="row text-center text-lg-left">
 
         <div class="col-lg-3 col-md-4 col-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/art/melt/orca.jpg" alt="">
+          <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#orca">
+            <!-- The Modal -->
+            <div class="modal" id="orca">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title font-weight-light">Orca | Melt</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <img class="img-fluid" src="img/art/melt/orca.jpg" alt="orca">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="img-fluid img-thumbnail" src="img/art/melt/orca.jpg" alt="orca">
           </a>
         </div>
         <div class="col-lg-3 col-md-4 col-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/art/melt/lana.jpg" alt="">
+          <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#lana">
+            <!-- The Modal -->
+            <div class="modal" id="lana">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title font-weight-light">Lana | Melt</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <img class="img-fluid" src="img/art/melt/lana.jpg" alt="lana">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="img-fluid img-thumbnail" src="img/art/melt/lana.jpg" alt="lana">
           </a>
         </div>
         <div class="col-lg-3 col-md-4 col-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/art/melt/miley.jpg" alt="">
+          <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#miley">
+            <!-- The Modal -->
+            <div class="modal" id="miley">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title font-weight-light">Miley | Melt</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <img class="img-fluid" src="img/art/melt/miley.jpg" alt="miley">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="img-fluid img-thumbnail" src="img/art/melt/miley.jpg" alt="miley">
           </a>
         </div>
         <div class="col-lg-3 col-md-4 col-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="img/art/melt/rose.jpg" alt="">
+          <a href="#" class="d-block mb-4 h-100" data-toggle="modal" data-target="#rose">
+            <!-- The Modal -->
+            <div class="modal" id="rose">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title font-weight-light">Rose | Melt</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <img class="img-fluid" src="img/art/melt/rose.jpg" alt="rose">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="img-fluid img-thumbnail" src="img/art/melt/rose.jpg" alt="rose">
           </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-6">
+        <!-- <div class="col-lg-3 col-md-4 col-6">
           <a href="#" class="d-block mb-4 h-100">
             <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
           </a>
@@ -141,7 +218,7 @@
             <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
           </a>
         </div>
-      </div>
+      </div> -->
 
     </div>
     <!-- /.container -->
